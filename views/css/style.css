@@ -29,6 +29,10 @@ form {
   font-weight: 800;
 }
 
+.size1 .randomPizzaContainer{width:25%;}
+.size2 .randomPizzaContainer{width:33%;}
+.size3 .randomPizzaContainer{width:50%;}
+
 .mover {
   position: fixed;
   width: 256px;
