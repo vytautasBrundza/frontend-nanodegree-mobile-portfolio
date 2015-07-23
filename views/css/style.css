@@ -21,6 +21,8 @@ form {
   display: inline-block;
 }
 
+img{max-width:100%;}
+
 .centered {
   text-align: center;
 }
@@ -29,9 +31,25 @@ form {
   font-weight: 800;
 }
 
-.size1 .randomPizzaContainer{width:25%;}
-.size2 .randomPizzaContainer{width:33%;}
-.size3 .randomPizzaContainer{width:50%;}
+.size1 .randomPizzaContainer{
+  width:25%;
+}
+
+.size2 .randomPizzaContainer{
+  width:33%;
+}
+
+.size3 .randomPizzaContainer{
+  width:50%;
+}
+
+.small-image{display:inline;}
+.medium-image{display:none;}
+
+@media only screen and (min-width: 420px) and (max-width: 990px){
+.small-image{display:none;}
+.medium-image{display:inline;}
+}
 
 .mover {
   position: fixed;
