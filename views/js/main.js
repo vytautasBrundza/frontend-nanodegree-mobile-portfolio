@@ -402,6 +402,7 @@ var pizzaElementGenerator = function(i) {
 var resizePizzas = function(size) {
   window.performance.mark("mark_start_resize");   // User Timing API function
 
+  // use CCS rather than JS calculations to resize elements
   var newSize= "size"+size;
   document.getElementById("randomPizzas").classList.remove(lastPizzaSize);
   document.getElementById("randomPizzas").classList.add(newSize);
@@ -492,7 +493,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 40; i++) {  //reduce number of pizzas from 200 to 40.
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
